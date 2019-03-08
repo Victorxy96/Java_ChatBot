@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="400.0" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #DFDFDF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ChatWindowController">
+   <children>
+      <Pane layoutY="7.0" minWidth="400.0" prefHeight="70.0" prefWidth="382.0" style="-fx-background-color: #7B84FD;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="30.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/peppa-blue.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="101.0" layoutY="22.0" text="Stu-SB" textFill="#f8f8f8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ListView fx:id="output" layoutY="68.0" minWidth="400.0" prefHeight="417.0" prefWidth="382.0" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0" />
+      <HBox fx:id="hbox" alignment="CENTER" layoutY="490.0" minWidth="400.0" prefHeight="62.0" prefWidth="382.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField fx:id="input" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="287.0" promptText="Send a message..." style="-fx-background-color: #DFDFDF;" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="4.0" left="8.0" right="10.0" top="4.0" />
+               </HBox.margin>
+            </TextField>
+            <ImageView fx:id="voice" fitHeight="32.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/voice.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="send" fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/send.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="6.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="211.0" minHeight="-Infinity" prefHeight="181.0" prefWidth="400.0" AnchorPane.bottomAnchor="208.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="211.0">
+         <children>
+            <Pane fx:id="voicePane" maxHeight="175.0" maxWidth="175.0" opacity="0.75" prefHeight="175.0" prefWidth="175.0" style="-fx-background-color: #696969; -fx-background-radius: 15;" HBox.hgrow="NEVER">
+               <children>
+                  <HBox prefHeight="120.0" prefWidth="173.0">
+                     <children>
+                        <ImageView fitHeight="105.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/voice-white.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" prefHeight="120.0" prefWidth="76.0">
+                           <children>
+                              <Rectangle fx:id="voiceBar5" arcHeight="5.0" arcWidth="10.0" fill="WHITE" height="10.0" stroke="WHITE" strokeType="INSIDE" width="52.0">
+                                 <VBox.margin>
+                                    <Insets top="6.0" />
+                                 </VBox.margin>
+                              </Rectangle>
+                              <Rectangle fx:id="voiceBar4" arcHeight="5.0" arcWidth="10.0" fill="WHITE" height="10.0" stroke="WHITE" strokeType="INSIDE" width="44.0">
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Rectangle>
+                              <Rectangle fx:id="voiceBar3" arcHeight="5.0" arcWidth="10.0" fill="WHITE" height="10.0" stroke="WHITE" strokeType="INSIDE" width="36.0">
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Rectangle>
+                              <Rectangle fx:id="voiceBar2" arcHeight="5.0" arcWidth="10.0" fill="WHITE" height="10.0" stroke="WHITE" strokeType="INSIDE" width="28.0">
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Rectangle>
+                              <Rectangle fx:id="voiceBar1" arcHeight="5.0" arcWidth="10.0" fill="WHITE" height="10.0" stroke="WHITE" strokeType="INSIDE" width="20.0">
+                                 <VBox.margin>
+                                    <Insets top="12.0" />
+                                 </VBox.margin>
+                              </Rectangle>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                  </HBox>
+                  <Label layoutX="16.0" layoutY="143.0" text="Click again to send" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
