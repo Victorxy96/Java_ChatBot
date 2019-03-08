@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>^ Western Australia ^</pattern>
+	    <template>The information of western australia is as following:
+	    <button>
+	        <text>Introduction</text>
+	        <postback>^ detail ^ Western Australia ^</postback>
+        </button>
+        <button>
+            <text>Tourist Attractions</text>
+            <postback>^ tourist attractions ^ Western Australia ^</postback>
+        </button>
+        <button>
+            <text>Food recommend</text>
+            <postback>^ food ^ Western Australia ^</postback>
+        </button>
+        <button>
+            <text>Weather</text>
+            <postback>^ weather ^ Western Australia ^</postback>
+        </button>
+	    </template>
+    </category>
+    
+    
+    <category>
+	    <pattern>^ weather ^ Western Australia ^</pattern>
+	    <template>
+	        <card>
+	            <image>https://lh3.googleusercontent.com/KyIUkyc9qtd0DqxLr4MJ6ve5lT1fjjBRAeRoybplTCG_aatdFSWekgTEnP6kWKHFb12bW-OI4RA=w640-h400-e365</image>
+	            <button>
+	            <text>Check the weather here!</text>
+	            <url>https://weather.com/weather/today/l/-31.95,115.86?par=google</url>
+            </button>
+            </card>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ detail ^ Western Australia ^</pattern>
+        <template>Western Australia is a state occupying the entire western third of Australia. It is bounded by the Indian Ocean to the north and west, and the Southern Ocean to the south, the Northern Territory to the north-east and South Australia to the south-east.</template>
+    </category>
+	
+	<category>
+	    <pattern>^ tourist attractions ^ Western Australia ^</pattern>
+	    <template>
+	        <carousel>
+	            <card>
+	                <image>https://www.likealocalguide.com/media/cache/ec/f2/ecf2975123c04d37d40f301a05000869.jpg</image>
+	                <title>Kings Park and Botanic Garden</title>
+	                <button>
+                        <text>View brief introduction</text>
+                        <postback>^ Kings Park and Botanic Garden ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://www.margaretriver.com/wp-content/uploads/2018/07/584541d.jpg</image>
+                    <title>Jewel Cave</title>
+                    <button>
+                        <text>View brief introduction</text>
+                        <postback>^ Jewel Cave ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://d1ne1hbcnyoys2.cloudfront.net/imagegen/max/ccr/1088/-/s3/adventures-cougar-assets/travel/2017/03/31/3939/horizontal-falls.jpg</image>
+                    <title>Horizontal Falls</title>
+                    <button>
+                        <text>View brief introduction</text>
+                        <postback>^ Horizontal Falls ^</postback>
+                    </button>
+                </card>
+            </carousel>
+	    </template>
+    </category>
+	
+
+    
+    <category>
+        <pattern>^ Kings Park and Botanic Garden ^</pattern>
+        <template>The park cultivates over 13,000 species of Western Australian plants and contains one of the world's largest areas of natural bush land close to a city.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Jewel Cave ^</pattern>
+        <template>Jewel Cave is Western Australia's largest show cave and is home to one of the longest straw stalactites in any tourist cave in Australia. </template>
+    </category>
+    
+    <category>
+        <pattern>^ Horizontal Falls ^</pattern>
+        <template>Located deep within Talbot Bay in the Buccaneer Archipelago are the Horizontal Waterfalls. Massive tidal movements create a waterfall effect as water banks up against one side of the narrow cliff passage, to be repeated on the turning tide. The falls can only be reached by boat or plane.</template>
+    </category>
+    
+    <category>
+        <pattern>^ food ^ Western Australia ^</pattern>
+        <template>
+            <card>
+                <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg</image>
+                <button>
+                <text>Manjimup Truffles</text>
+                <postback>^ Manjimup Truffles ^</postback>
+            </button>
+            <button>
+                <text>Pavlova</text>
+                <postback>^ Pavlova ^</postback>
+            </button>
+            <button>
+                <text>Wineries of WA</text>
+                <postback>^ Wineries of WA ^</postback>
+            </button>
+            </card> 
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ Manjimup Truffles ^</pattern>
+        <template>WA is known as the key truffles region of Australia because it produces 80% of the nation’s truffles. Manjimup owes its unique flavour to the surrounding Karri Trees, loamy soil and WA’s befitting climate, i.e., balmy in summer, and tepid and wet in winter.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Pavlova ^</pattern>
+        <template>Made during the visit of a Russian Ballerina- Anna Pavlova, Pavlova is a traditional WA dessert cake with cream, fruits and meringue. Resembling the beauty and breezy dance movements of Anna Pavlova, the dessert itself is incredibly lightweight. A new cake made out of meringue and real fruit toppings than ones inside the cake of the bygone era was a trendsetter.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Wineries of WA ^</pattern>
+        <template>WA makes 20% the nation’s total wine with 6 outstanding wineries earning an international reputation for producing high, consistent quality wines. Their handcrafted beer also enjoys a comparable reputation.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Perth ^</pattern>
+        <template><srai>^ Western Australia ^</srai></template>
+    </category>
+    
+    
+</aiml>

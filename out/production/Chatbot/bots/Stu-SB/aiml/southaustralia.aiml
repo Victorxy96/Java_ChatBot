@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+		<category>
+	    <pattern>^ South Australia ^</pattern>
+	    <template>The information of South Australia is as following:
+	    <button>
+	        <text>Introduction</text>
+	        <postback>^ detail ^ South Australia ^</postback>
+        </button>
+        <button>
+            <text>Tourist Attractions</text>
+            <postback>^ tourist attractions ^ South Australia ^</postback>
+        </button>
+        <button>
+            <text>Food recommend</text>
+            <postback>^ food ^ South Australia ^</postback>
+        </button>
+        <button>
+            <text>Weather</text>
+            <postback>^ weather ^ South Australia ^</postback>
+        </button>
+	    </template>
+    </category>
+    
+    
+    <category>
+	    <pattern>^ weather ^ South Australia ^</pattern>
+	    <template>
+	        <card>
+	            <image>https://lh3.googleusercontent.com/KyIUkyc9qtd0DqxLr4MJ6ve5lT1fjjBRAeRoybplTCG_aatdFSWekgTEnP6kWKHFb12bW-OI4RA=w640-h400-e365</image>
+	            <button>
+	            <text>Check the weather here!</text>
+	            <url>http://www.farmonlineweather.com.au/sa</url>
+            </button>
+            </card>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ detail ^ South Australia ^</pattern>
+        <template>South Australia is blessed with some of the country's greatest natural wonders. Sunny weather with blue open skies are typical; grab a glass of its top quality red wine and enjoy amazing views with its warm, friendly people.</template>
+    </category>
+	
+	<category>
+	    <pattern>^ tourist attractions ^ South Australia ^</pattern>
+	    <template>
+	        <carousel>
+	            <card>
+	                <image>https://bigheartadventures.com.au/wp-content/uploads/2017/06/Big-Heart-Adventures-Kangaroo-Island-e1497584125594.jpeg</image>
+	                <title>Kangaroo Island</title>
+	                <button>
+                        <text>View brief introduction</text>
+                        <postback>^ Kangaroo Island ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>http://www.traveller.com.au/content/dam/images/1/2/5/m/v/c/image.related.articleLeadwide.620x349.1250vo.png/1418859099899.jpg</image>
+                    <title>Auburn</title>
+                    <button>
+                        <text>View brief introduction</text>
+                        <postback>^ Auburn ^</postback>
+                    </button>
+                </card>
+            </carousel>
+	    </template>
+    </category>
+	
+
+    
+    <category>
+        <pattern>^ Kangaroo Island ^</pattern>
+        <template>Catching the ferry to windswept Kangaroo Island is an adventure in itself. Australia's third largest island is jam-packed full of natural beauty over a deceptively small place, such as Seal Bay.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Auburn ^</pattern>
+        <template>Located 110 km from Adelaide, Auburn is the southern gateway to the rich vineyards of the Clare Valley and a once important town where bullock teams and miners stopped on their way from Port Wakefield to the copper mines around Burra.</template>
+    </category>
+    
+    <category>
+        <pattern>^ food ^ South Australia ^</pattern>
+        <template>
+            <card>
+                <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg</image>
+                <button>
+                <text>Schnitzel</text>
+                <postback>^ Schnitzel ^</postback>
+            </button>
+            <button>
+                <text>Bung Fritz</text>
+                <postback>^ Bung Fritz ^</postback>
+            </button>
+            <button>
+                <text>Kitchener Bun</text>
+                <postback>^ Kitchener Bun ^</postback>
+            </button>
+            </card>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ Schnitzel ^</pattern>
+        <template>Due the high influx of German immigrants, this dish remains one of the MOST common dishes found in South Australia's cuisine.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Bung Fritz ^</pattern>
+        <template>Think spam and ham combined into a sausage "casing" and served like sliced ham at the delI, because that's exactly what it tastes like.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Kitchener Bun ^</pattern>
+        <template>Kitchener buns are essentially a big crusty, flaky puff, cut open, smeared with a jam, and filled with whipped cream. </template>
+    </category>
+    
+    <category>
+        <pattern>^ Adelaide ^</pattern>
+        <template><srai>^ South Australia ^</srai></template>
+    </category>
+    
+</aiml>

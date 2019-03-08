@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>^ victoria ^</pattern>
+	    <template>The information of Victoria is as following:
+	    <button>
+	        <text>Introduction</text>
+	        <postback>^ detail ^ Victoria ^</postback>
+        </button>
+        <button>
+            <text>Tourist Attractions</text>
+            <postback>^ tourist attractions ^ Victoria ^</postback>
+        </button>
+        <button>
+            <text>Food recommend</text>
+            <postback>^ food ^ Victoria ^</postback>
+        </button>
+        <button>
+            <text>Weather</text>
+            <postback>^ weather ^ Victoria ^</postback>
+        </button>
+	    </template>
+    </category>
+    
+    
+    <category>
+	    <pattern>^ weather ^ Victoria ^</pattern>
+	    <template>
+	        <card>
+	            <image>https://lh3.googleusercontent.com/KyIUkyc9qtd0DqxLr4MJ6ve5lT1fjjBRAeRoybplTCG_aatdFSWekgTEnP6kWKHFb12bW-OI4RA=w640-h400-e365</image>
+	            <button>
+	            <text>Check the weather here!</text>
+	            <url>https://weather.com/weather/today/l/-37.81,144.96?par=google</url>
+            </button>
+            </card>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ detail ^ Victoria ^</pattern>
+        <template>Victoria is a state in south-eastern Australia. Victoria is Australia's most densely populated state and its second-most populous state overall. Most of its population lives concentrated in the area surrounding Port Phillip Bay, which includes the metropolitan area of its state capital and largest city, Melbourne, Australia's second-largest city.</template>
+    </category>
+	
+	<category>
+	    <pattern>^ tourist attractions ^ Victoria ^</pattern>
+	    <template>
+	        <carousel>
+	            <card>
+	                <image>https://www.australia.com/content/australia/en/places/melbourne-and-surrounds/guide-to-the-great-ocean-road/jcr:content/image.adapt.1200.HIGH.jpg</image>
+	                <title>Great Ocean Road</title>
+	                <button>
+                        <text>View brief introduction</text>
+                        <postback>^ Great Ocean Road ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://www.visitmelbourne.com/-/media/atdw/melbourne/travel-information/getting-around/public-transport/original__9085749_tvic_citycircle_xo2vmon_2048x1152.jpg?ts=20170818460139</image>
+                    <title>City Circle Tram</title>
+                    <button>
+                        <text>View brief introduction</text>
+                        <postback>^ City Circle Tram ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://www.visitmelbourne.com/-/media/atdw/melbourne/things-to-do/nature-and-wildlife/parks-and-gardens/ebd189686e916626b17b19e0784852b7_2048x1152.jpeg?ts=20180613360439</image>
+                    <title>Royal Botanic Gardens Victoria</title>
+                    <button>
+                        <text>View brief introduction</text>
+                        <postback>^ Royal Botanic Gardens Victoria ^</postback>
+                    </button>
+                </card>
+            </carousel>
+	    </template>
+    </category>
+	
+
+    
+    <category>
+        <pattern>^ Great Ocean Road ^</pattern>
+        <template>See the towering 12 Apostles, get up close to native wildlife, and take in iconic surf breaks, pristine rainforest and misty waterfalls along the spectacular Great Ocean Road. </template>
+    </category>
+    
+    <category>
+        <pattern>^ City Circle Tram ^</pattern>
+        <template>The City Circle Tram is a free and convenient way to see the sights of central Melbourne and the Docklands while experiencing a ride on one of the city's much loved heritage trams.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Royal Botanic Gardens Victoria ^</pattern>
+        <template>Visit Melbourne's inner-city oasis. Over 10,000 plant species from around the world are presented in a kaleidoscope of color and texture. Sweeping lawns, tranquil lakes and majestic trees are home to an amazing range of wildlife.</template>
+    </category>
+    
+    <category>
+        <pattern>^ food ^ Victoria ^</pattern>
+        <template>
+            <card>
+                <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg</image>
+                 <button>
+                <text>Prom Country Cheese</text>
+                <postback>^ Prom Country Cheese ^</postback>
+            </button>
+            <button>
+                <text>Mi Shells Seafood</text>
+                <postback>^ Mi Shells Seafood ^</postback>
+            </button>
+            <button>
+                <text>Cliffy's Emporium</text>
+                <postback>^ Cliffy's Emporium ^</postback>
+            </button>
+            <button>
+                <text>Farmers Harvest</text>
+                <postback>^ Farmers Harvest ^</postback>
+            </button>
+            </card>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ Prom Country Cheese ^</pattern>
+        <template>Prom Country Cheese serves cheese tastings, platters and lunches featuring handmade specialty cheeses and local farm produce.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Mi Shells Seafood ^</pattern>
+        <template>Mi Shells Seafood sell fresh, locally caught seafood to the public from their families boat at Queenscliff Harbour.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Cliffy's Emporium ^</pattern>
+        <template> Back in the 1950s, Cliffy Hauser’s general store in Daylesford was famous for an extraordinary range of produce, groceries and farm supplies crammed into a rustic timber and corrugated iron buildi</template>
+    </category>
+    
+    <category>
+        <pattern>^ Farmers Harvest ^</pattern>
+        <template>Farmers Harvest is a local focused business gathering food from around the Bellarine and near by townships. They stock a wide range of seasonal fruit and vegetables concentrating on quality and flavor.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Melbourne ^</pattern>
+        <template><srai>^ victoria ^</srai></template>
+    </category>
+</aiml>

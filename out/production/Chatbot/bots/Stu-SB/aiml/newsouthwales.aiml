@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>^ new south wales ^</pattern>
+	    <template>The information of New South Wales is as following:
+	    <button>
+	        <text>Introduction</text>
+	        <postback>^ detail ^ New South Wales ^</postback>
+        </button>
+        <button>
+            <text>Tourist Attractions</text>
+            <postback>^ tourist attractions ^ New South Wales ^</postback>
+        </button>
+        <button>
+            <text>Food recommend</text>
+            <postback>^ food ^ New South Wales ^</postback>
+        </button>
+        <button>
+            <text>Weather</text>
+            <postback>^ weather ^ new south wales ^</postback>
+        </button>
+	    </template>
+    </category>
+	
+	
+	<category>
+	    <pattern>^ weather ^ new south wales ^</pattern>
+	    <template>
+	        <card>
+	            <image>https://lh3.googleusercontent.com/KyIUkyc9qtd0DqxLr4MJ6ve5lT1fjjBRAeRoybplTCG_aatdFSWekgTEnP6kWKHFb12bW-OI4RA=w640-h400-e365</image>
+	            <button>
+	            <text>Check the weather here!</text>
+	            <url>https://www.willyweather.com.au/nsw.html</url>
+            </button>
+            </card>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ detail ^ New South Wales ^</pattern>
+        <template>Beaches, mountains, caves and rivers; this state has it all. From outback New South Wales to the bustling, bright capital, from the north coast to south coast; there is nothing that will disappoint. </template>
+    </category>
+	
+	<category>
+	    <pattern>^ tourist attractions ^ New South Wales ^</pattern>
+	    <template>
+	        <carousel>
+	            <card>
+	                <image>https://media-cdn.tripadvisor.com/media/photo-s/07/04/1b/45/sublime-point-lookout.jpg</image>
+	                <title>Blue Mountains</title>
+	                <button>
+                        <text>View brief introduction</text>
+                        <postback>^ blue mountain ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>http://www.traveller.com.au/content/dam/images/1/2/u/u/g/d/image.related.TravellerThumbnail.300x200.12uumo.png/1450737931435.jpg</image>
+                    <title>Central Coast</title>
+                    <button>
+                        <text>View brief introduction</text>
+                        <postback>^ central coast ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>http://www.traveller.com.au/content/dam/images/h/0/f/s/f/x/image.related.TravellerThumbnail.300x200.h0fqq5.png/1517576047572.jpg</image>
+                    <title>Lord Howe Island</title>
+                    <button>
+                        <text>View brief introduction</text>
+                        <postback>^ lord Howe Island ^</postback>
+                    </button>
+                </card>
+            </carousel>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ blue mountain ^</pattern>
+        <template>The Blue Mountains is densely populated by oil bearing Eucalyptus trees. The atmosphere is filled with finely dispersed droplets of oil, which, in combination with dust particles and water vapour, scatter short-wave length rays of light which are predominantly blue in colour.</template>
+    </category>
+    
+    <category>
+        <pattern>^ central coast ^</pattern>
+        <template>In the past couple of years, the winds of transformation have been blowing in along the Coast, bringing with them a five-star resort, cool gallery spaces, newsworthy authentic Mexican, vintage upcycled threads, floral artistry, and fine dining to rival the best of big cities.</template>
+    </category>
+    
+    <category>
+        <pattern>^ lord Howe Island ^</pattern>
+        <template>Great beach and easy snorkelling.</template>
+    </category>
+    
+    <category>
+        <pattern>^ food ^ New South Wales ^</pattern>
+        <template>
+            <card>
+                <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg</image>
+                <button>
+                <text>Sample rock oysters</text>
+                <postback>^ Sample rock oysters ^</postback>
+            </button>
+            <button>
+                <text>Slurp wine</text>
+                <postback>^ Slurp wine ^</postback>
+            </button>
+            </card>
+        </template>
+    </category>
+	
+	<category>
+	    <pattern>^ Sample rock oysters ^</pattern>
+	    <template>The state’s 300km-long Oyster Coast – stretching south of Sydney – is scattered with oyster farms. Many specialise in succulent rock oysters, which are known for their intense, tangy flavour. Try them fresh in the shell with a squeeze of lemon. </template>
+    </category>
+    
+    <category>
+        <pattern>^ Slurp wine ^</pattern>
+        <template>The state’s and Australia's oldest wine region produces high-quality shiraz, cabernet sauvignon, semillon and merlot, with dozens of top-notch wineries and cellar doors open for visits and tastings.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Sydney ^</pattern>
+        <template><srai>^ new south wales ^</srai></template>
+    </category>
+	
+</aiml>

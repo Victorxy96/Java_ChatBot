@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>^ recommend ^</pattern>
+	    <template>
+	        <carousel>
+	            <card>
+	                <image>http://www.traveller.com.au/content/dam/images/1/0/a/t/5/k/image.related.TravellerThumbnail.300x200.zsbdv.png/1533697121982.jpg</image>
+	                <title>New South Wales</title>
+	                <button>
+	                    <text>Introduction</text>
+	                    <postback>^ detail of New South Wales ^</postback>
+                    </button>
+	                <button>
+	                    <text>Tourist Attractions</text>
+	                    <postback>^ tourist attractions of New South Wales ^</postback>
+                    </button>
+                    <button>
+                        <text>Food recommend</text>
+                        <postback>^ food of New South Wales ^</postback>
+                    </button>
+                    <button>
+                        <text>Weather</text>
+                        <postback>^ weather of new south wales ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>http://www.traveller.com.au/content/dam/images/z/x/p/l/i/image.related.TravellerThumbnail.300x200.zsbiw.png/1485233400409.jpg</image>
+                    <title>Victoria</title>
+                    <button>
+                        <text>Introduction</text>
+                        <postback>^ detail of Victoria ^</postback>
+                    </button>
+                    <button>
+	                    <text>Tourist Attractions</text>
+	                    <postback>^ tourist attractions of Victoria ^</postback>
+                    </button>
+                    <button>
+                        <text>Food recommend</text>
+                        <postback>^ food of Victoria ^</postback>
+                    </button>
+                    <button>
+                        <text>Weather</text>
+                        <postback>^ weather of Victoria ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>http://www.traveller.com.au/content/dam/images/1/0/g/i/r/v/image.related.TravellerThumbnail.300x200.zsbgf.png/1479786637402.jpg</image>
+                    <title>Queensland</title>
+                    <button>
+                        <text>Introduction</text>
+                        <postback>^ detail of Queensland ^</postback>
+                    </button>
+                    <button>
+	                    <text>Tourist Attractions</text>
+	                    <postback>^ tourist attractions of Queensland  ^</postback>
+                    </button>
+                    <button>
+                        <text>Food recommend</text>
+                        <postback>^ food of Queensland  ^</postback>
+                    </button>
+                    <button>
+                        <text>Weather</text>
+                        <postback>^ weather of Queensland  ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>http://www.traveller.com.au/content/dam/images/1/0/3/4/g/s/image.related.TravellerThumbnail.300x200.zsbhn.png/1529971193121.jpg</image>
+                    <title>South Australia</title>
+                    <button>
+                        <text>Introduction</text>
+                        <postback>^ detail of South Australia ^</postback>
+                    </button>
+                    <button>
+	                    <text>Tourist Attractions</text>
+	                    <postback>^ tourist attractions of South Australia  ^</postback>
+                    </button>
+                    <button>
+                        <text>Food recommend</text>
+                        <postback>^ food of South Australia  ^</postback>
+                    </button>
+                    <button>
+                        <text>Weather</text>
+                        <postback>^ weather of South Australia  ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>http://www.traveller.com.au/content/dam/images/g/y/6/z/j/9/image.related.TravellerThumbnail.300x200.zsbkr.png/1510709811209.jpg</image>
+                    <title>Western Australia</title>
+                     <button>
+                        <text>Introduction</text>
+                        <postback>^ detail of Western Australia ^</postback>
+                    </button>
+                    <button>
+	                    <text>Tourist Attractions</text>
+	                    <postback>^ tourist attractions of Western Australia  ^</postback>
+                    </button>
+                    <button>
+                        <text>Food recommend</text>
+                        <postback>^ food of Western Australia  ^</postback>
+                    </button>
+                    <button>
+                        <text>Weather</text>
+                        <postback>^ weather of Western Australia  ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>http://www.traveller.com.au/content/dam/images/z/x/y/e/a/image.related.TravellerThumbnail.300x200.zsbih.png/1483326520038.jpg</image>
+                    <title>Tasmania</title>
+                    <button>
+                        <text>Introduction</text>
+                        <postback>^ detail of Tasmania ^</postback>
+                    </button>
+                    <button>
+	                    <text>Tourist Attractions</text>
+	                    <postback>^ tourist attractions of Tasmania ^</postback>
+                    </button>
+                    <button>
+                        <text>Food recommend</text>
+                        <postback>^ food of Tasmania  ^</postback>
+                    </button>
+                    <button>
+                        <text>Weather</text>
+                        <postback>^ weather of Tasmania ^</postback>
+                    </button>
+                </card>
+                
+            </carousel>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ ideas ^</pattern>
+        <template><srai>^ recommend ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ fun ^</pattern>
+        <template><srai>^ recommend ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ suggestion ^</pattern>
+        <template><srai>^ recommend ^</srai></template>
+    </category>
+    
+</aiml>
