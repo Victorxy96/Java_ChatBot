@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>^ Queensland ^</pattern>
+	    <template>The information of Queensland is as following:
+	    <button>
+	        <text>Introduction</text>
+	        <postback>^ detail ^ Queensland ^</postback>
+        </button>
+        <button>
+            <text>Tourist Attractions</text>
+            <postback>^ tourist attractions ^ Queensland ^</postback>
+        </button>
+        <button>
+            <text>Food recommend</text>
+            <postback>^ food ^ Queensland ^</postback>
+        </button>
+        <button>
+            <text>Weather</text>
+            <postback>^ weather ^ Queensland ^</postback>
+        </button>
+	    </template>
+    </category>
+    
+    
+    <category>
+	    <pattern>^ weather ^ Queensland ^</pattern>
+	    <template>
+	        <card>
+	            <image>https://lh3.googleusercontent.com/KyIUkyc9qtd0DqxLr4MJ6ve5lT1fjjBRAeRoybplTCG_aatdFSWekgTEnP6kWKHFb12bW-OI4RA=w640-h400-e365</image>
+	            <button>
+	            <text>Check the weather here!</text>
+	            <url>http://www.weatherzone.com.au/qld/maranoa/roma</url>
+            </button>
+            </card>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ detail ^ Queensland ^</pattern>
+        <template>Australia's sunshine state is a perfect holiday destination for any type of traveller of any age. Whether you enjoy swimming, diving, trekking, cruising or exploring natural wonders, this is the place to kick off your shoes, relax and create lifetime memories.</template>
+    </category>
+	
+	<category>
+	    <pattern>^ tourist attractions ^ Queensland ^</pattern>
+	    <template>
+	        <carousel>
+	            <card>
+	                <image>http://www.traveller.com.au/content/dam/images/2/d/y/9/2/image.related.TravellerThumbnail.300x200.2dope.png/1360191796847.jpg</image>
+	                <title>Gold Coast</title>
+	                <button>
+                        <text>View brief introduction</text>
+                        <postback>^ Gold Coast ^</postback>
+                    </button>
+                </card>
+            </carousel>
+	    </template>
+    </category>
+	
+
+    
+    <category>
+        <pattern>^ Gold Coast ^</pattern>
+        <template>Australia's own Vegas is centred around a beautiful golden stretch of sand that hugs a strip of urban skyscrapers. Its nightlife, glitzy malls and million-dollar theme parks attract an excessive amount of visitors, too, and with good reason.
+ </template>
+    </category>
+    
+    <category>
+        <pattern>^ food ^ Queensland ^</pattern>
+        <template>
+            <card>
+                <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg</image>
+                <button>
+                <text>Bananas</text>
+                <postback>^ Bananas ^</postback>
+            </button>
+            <button>
+                <text>Queensland Seafood</text>
+                <postback>^ Queensland Seafood ^</postback>
+            </button>
+            </card>   
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ Bananas ^</pattern>
+        <template>What can we say? We go bananas for our bananas!</template>
+    </category>
+    
+    <category>
+        <pattern>^ Queensland Seafood ^</pattern>
+        <template>Seafood is supreme in Queensland. Delicacies such as Moreton Bay bugs, mud crabs, king and tiger prawns, mackerel, sea scallops and fresh barramundi.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Brisbane ^</pattern>
+        <template><srai>^ Queensland ^</srai></template>
+    </category>
+    
+   
+</aiml>

@@ -1,0 +1,20 @@
+0,^ YOUR NAME ^,*,*,Hi I am <bot name="name"/>.,default.aiml
+0,^ YOUR BIRTHDAY ^,*,*,My birthday is <bot name="birthday"/>,default.aiml
+0,^ HOW OLD ARE YOU ^,*,*,<srai>^ your birthday ^</srai>,default.aiml
+0,^ LOVE ^,*,*,Sure. You can kiss me if you want.,default.aiml
+0,^ CLEVER ^,*,*,You are the most clever person in the world,default.aiml
+0,^ STUPID ^,*,*,<srai>^ clever ^</srai>,default.aiml
+0,^ I HATE YOU ^,*,*,Wooo...But you know I still love you,default.aiml
+0,^ HI ^,*,*,Hi! I am stusb. You can ask me any question about tavelling in Australia.,default.aiml
+0,WHO ARE YOU ^,*,*,<srai>^ Hi ^</srai>,default.aiml
+0,^ HELLO ^,*,*,<srai>^ Hi ^</srai>,default.aiml
+0,^ HOW ^ GOING ^,*,*,<srai>^ Hi ^</srai>,default.aiml
+0,^ HOW ARE YOU ^,*,*,<srai>^ Hi ^</srai>,default.aiml
+0,^ HOW DO YOU DO ^,*,*,<srai>^ Hi ^</srai>,default.aiml
+0,^ WHAT CAN YOU DO ^,*,*,<srai>^ Hi ^</srai>,default.aiml
+0,^ WHAT ^ UP ^,*,*,<srai>^ Hi ^</srai>,default.aiml
+0,WHAT DID YOU JUST SAY ^,*,*,<response index="1"/>,default.aiml
+0,HI, I AM *,*,*,Hi <set name="name"><star/></set>! You can ask me any question about tavel in Australia.,default.aiml
+0,^ BYE ^,*,*,Bye! Have a lovely day!,default.aiml
+0,^ GOODBYE ^,*,*,<srai>^ Bye ^</srai>,default.aiml
+0,^ SEE YOU ^,*,*,<srai>^ Bye ^</srai>,default.aiml

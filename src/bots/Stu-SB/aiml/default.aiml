@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>^ your name ^</pattern>
+	    <template>Hi I am <bot name="name"/>.</template>
+    </category>
+    
+    <category>
+        <pattern>^ your birthday ^</pattern>
+        <template>My birthday is <bot name="birthday"/></template>
+    </category>
+    
+    <category>
+        <pattern>^ How old are you ^</pattern>
+        <template><srai>^ your birthday ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ love ^</pattern>
+        <template>Sure. You can kiss me if you want.</template>
+    </category>
+    
+    <category>
+        <pattern>^ clever ^</pattern>
+        <template>You are the most clever person in the world</template>
+    </category>
+    
+    <category>
+        <pattern>^ stupid ^</pattern>
+        <template><srai>^ clever ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ I hate you ^</pattern>
+        <template>Wooo...But you know I still love you</template>
+    </category>
+    
+    <category>
+        <pattern>^ Hi ^</pattern>
+        <template>Hi! I am stusb. You can ask me any question about tavelling in Australia.</template>
+    </category>
+    
+    <category>
+        <pattern>Who are you ^</pattern>
+        <template><srai>^ Hi ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ Hello ^</pattern>
+        <template><srai>^ Hi ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ How ^ going ^</pattern>
+        <template><srai>^ Hi ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ How are you ^</pattern>
+        <template><srai>^ Hi ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ How do you do ^</pattern>
+        <template><srai>^ Hi ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ What can you do ^</pattern>
+        <template><srai>^ Hi ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ what ^ up ^</pattern>
+        <template><srai>^ Hi ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>What did you just say ^</pattern>
+        <template><response index="1"/></template>
+    </category>
+    
+     <category>
+        <pattern>Hi, I am *</pattern>
+        <template>Hi <set name ="name"><star/></set>! You can ask me any question about tavel in Australia.</template>
+    </category>
+	
+	<category>
+	    <pattern>^ Bye ^</pattern>
+        <template>Bye! Have a lovely day!</template>
+    </category>
+    
+    <category>
+        <pattern>^ Goodbye ^</pattern>
+        <template><srai>^ Bye ^</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ See you ^</pattern>
+        <template><srai>^ Bye ^</srai></template>
+    </category>
+    
+    
+</aiml>

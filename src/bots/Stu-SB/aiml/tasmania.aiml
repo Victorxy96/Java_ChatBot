@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+	<category>
+	    <pattern>^ tasmania ^</pattern>
+	    <template>The information of Tasmania is as following:
+	    <button>
+	        <text>Introduction</text>
+	        <postback>^ detail ^ Tasmania ^</postback>
+        </button>
+        <button>
+            <text>Tourist Attractions</text>
+            <postback>^ tourist attractions ^ Tasmania ^</postback>
+        </button>
+        <button>
+            <text>Food recommend</text>
+            <postback>^ food ^ Tasmania ^</postback>
+        </button>
+        <button>
+            <text>Weather</text>
+            <postback>^ weather ^ Tasmania ^</postback>
+        </button>
+	    </template>
+    </category>
+    
+    
+    <category>
+	    <pattern>^ weather ^ tasmania ^</pattern>
+	    <template>
+	        <card>
+	            <image>https://lh3.googleusercontent.com/KyIUkyc9qtd0DqxLr4MJ6ve5lT1fjjBRAeRoybplTCG_aatdFSWekgTEnP6kWKHFb12bW-OI4RA=w640-h400-e365</image>
+	            <button>
+	            <text>Check the weather here!</text>
+	            <url>https://weather.com/weather/today/l/-42.88,147.32?par=google</url>
+            </button>
+            </card>     
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>^ detail ^ tasmania ^</pattern>
+        <template>Tasmania is an island state of Australia. It is located 240 km to the south of the Australian mainland, separated by the Bass Strait.</template>
+    </category>
+	
+	<category>
+	    <pattern>^ tourist attractions ^ tasmania ^</pattern>
+	    <template>
+	        <carousel>
+	            <card>
+	                <image>https://cdn.experienceoz.com.au/assets/organisation/5954/banner/66826.jpg</image>
+	                <title>Bonorong Wildlife Sanctuary</title>
+	                <button>
+                        <text>View brief introduction</text>
+                        <postback>^ Bonorong Wildlife Sanctuary ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>https://farm2.staticflickr.com/1454/24472187002_37293f4d6b_b.jpg</image>
+                    <title>Maria Island National Park</title>
+                    <button>
+                        <text>View brief introduction</text>
+                        <postback>^ Maria Island National Park ^</postback>
+                    </button>
+                </card>
+                <card>
+                    <image>http://www.yarnsartworkinsilk.com/assets/img/panels/3.jpg</image>
+                    <title>Yarns Artwork in Silk</title>
+                    <button>
+                        <text>View brief introduction</text>
+                        <postback>^ Yarns Artwork in Silk ^</postback>
+                    </button>
+                </card>
+            </carousel>
+	    </template>
+    </category>
+	
+
+    
+    <category>
+        <pattern>^ Bonorong Wildlife Sanctuary ^</pattern>
+        <template>This national park offers excellent bushwalking, fishing and wildlife viewing of the island's more than 80 species of birds and native animals, including emus and wallabies that are frequently sighted.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Maria Island National Park ^</pattern>
+        <template>This national park offers excellent bushwalking, fishing and wildlife viewing of the island's more than 80 species of birds and native animals, including emus and wallabies that are frequently sighted.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Yarns Artwork in Silk ^</pattern>
+        <template>Yarns Artwork in Silk is a unique 3D textile art installation consisting of 4 very large handworked silk panels decipting local events and vistas in a seasonal diaroma.</template>
+    </category>
+    
+    <category>
+        <pattern>^ food ^ Tasmania ^</pattern>
+        <template>
+            <card>
+                <image>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1200px-Good_Food_Display_-_NCI_Visuals_Online.jpg</image>
+                <button>
+                <text>Flinders Island lamb</text>
+                <postback>^ Flinders Island lamb ^</postback>
+            </button>
+            <button>
+                <text>Meat pies</text>
+                <postback>^ Meat pies ^</postback>
+            </button>
+            <button>
+                <text>Fudge</text>
+                <postback>^ Fudge ^</postback>
+            </button>
+            <button>
+                <text>Leatherwood honey</text>
+                <postback>^ Leatherwood honey ^</postback>
+            </button>
+            </card>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ Flinders Island lamb ^</pattern>
+        <template>Indulging in succulent milk-fed lamb at Tasmania’s best restaurants is a decadent experience, but visiting the island where it was produced and cooking it on a beachside BBQ? Freshness and fun guaranteed!</template>
+    </category>
+    
+    <category>
+        <pattern>^ Meat pies ^</pattern>
+        <template>They may be exported by the pallet load but Tasmania’s famous National pies are best eaten straight from the oven. Made from Cape Grim beef, you can grab one of these sensational savory treats fresh from Tasmanian Bakeries’ renowned Hobart bakery.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Fudge ^</pattern>
+        <template>Tasmania is famous for the quality of its butter, and Fudgey takes this superb ingredient and blends it with chocolate to make one of the island’s most indulgent and delicious treats. Witness the masters at work in the Eaglehawk Neck store before indulging.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Leatherwood honey ^</pattern>
+        <template>Leatherwood honey is exclusive to the wilderness surrounding Cradle Mountain. When you’ve finished exploring, make a stop in Mole Creek where you can buy it from the factory door.</template>
+    </category>
+    
+    <category>
+        <pattern>^ Hobart ^</pattern>
+        <template><srai>^ tasmania ^</srai></template>
+    </category>
+    
+</aiml>
