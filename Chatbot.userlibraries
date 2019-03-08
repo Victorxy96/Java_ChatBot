@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Msc">
+    <archive path="E:/CMU/Courses/Java/Chatbot/lib/Msc.jar" />
+  </library>
+  <library name="gson-2.8.2">
+    <archive path="E:/CMU/Courses/Java/Chatbot/lib/gson-2.8.2.jar" />
+  </library>
+</eclipse-userlibraries>
+
